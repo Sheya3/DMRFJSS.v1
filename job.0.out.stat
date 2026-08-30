@@ -1,0 +1,999 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.276492025935373]
+Tree 0:
+ (Max (Min (Max BPTS (/ (+ TIS WIQ) (Max SEPTS EB))) (/ (/ (+ MAXWIQ OWTS) MWT) (Min WIQ (+ ANIQ TIS)))) (- (- (/ (* TES TIS) (+ SSPT SSPT)) (* (+ EB MAXNIQ) (- WIQ AMBT))) (+ (Min (/ OWTS MINNIQ) (/ EB WIQ)) (+ (* TES DD) (/ EB MINMBT)))))
+Tree 1:
+ (Min MAXMWT MSS)
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2266392963364967]
+Tree 0:
+ (Max (Min (Max BPTS (/ (+ TIS WIQ) (Max SEPTS EB))) (/ (/ (+ MAXWIQ OWTS) MWT) (Min WIQ (+ ANIQ TIS)))) (- (- (/ (* TES TIS) (+ SSPT SSPT)) (* (+ EB MAXNIQ) (- WIQ AMBT))) (+ (Min (/ OWTS MINNIQ) (/ EB WIQ)) (+ (Min (Min (Min MAXWIQ ANIQ) (+ TES ES)) (+ (+ TIS MAXWIQ) (/ ANIQ BPTS))) OWTS))))
+Tree 1:
+ (Min MAXMWT MSS)
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.271774722288836]
+Tree 0:
+ (+ TES (* (* NIQ BPTS) AMWT))
+Tree 1:
+ (Min MAXMWT MSS)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2808139262927085]
+Tree 0:
+ (Max (Min (Max BPTS (/ (+ TIS WIQ) (Max SEPTS EB))) (Max (/ (Max EB NIQ) (Min BPTS AWIQ)) (Min (* SSPT MINNIQ) (- SEPTS WIQ)))) (- (- (/ (* TES TIS) (+ SSPT SSPT)) (* (+ EB MAXNIQ) (Min TES AMBT))) (+ (Min (/ OWTS MINNIQ) (/ EB WIQ)) (+ (* TES DD) (/ EB MINMBT)))))
+Tree 1:
+ (Min MAXMWT MSS)
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2284108114937733]
+Tree 0:
+ (+ TES (* (/ (/ MAXMBT MWT) (Max MINNIQ MAXWIQ)) (+ (Max NIQ AMBT) (/ SEPT BPT))))
+Tree 1:
+ (Min MINMWT MSS)
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.243471274941303]
+Tree 0:
+ (Min (- (* MINMBT DD) (- NIQ NIQ)) (* (* MAXMBT (+ (- BPT SEPT) (+ ES MINNIQ))) (+ (Max (- MAXMBT MAXNIQ) AMBT) (Min (+ MWT NIQ) (Max AWIQ MAXMWT)))))
+Tree 1:
+ (Min MINMWT MSS)
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.200140208871215]
+Tree 0:
+ (Min (* (* OWTS WIQ) (/ MINWIQ MBT)) (* (* MAXMBT (+ (- BPT SEPT) (+ BPTS MINWIQ))) (+ (Max (+ BPTS DD) AMBT) (Min (+ MWT NIQ) (Max AWIQ MAXMWT)))))
+Tree 1:
+ (Min MINMWT MSS)
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2379391390365866]
+Tree 0:
+ (+ (+ MINMBT NIQ) (Max MWT MSS))
+Tree 1:
+ (Min MAXMWT MSS)
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.245885973294487]
+Tree 0:
+ (Min (- (* MBT (- (- (Min MS AMBT) (/ ANIQ BPTS)) (Max (Max SEPTS MAXNIQ) (- BPT MBT)))) (* ES MAXNIQ)) (Min (+ MINWIQ BPTS) (* MAXMBT (+ (- BPT SEPT) (+ ES MINNIQ)))))
+Tree 1:
+ (Min MINMWT MSS)
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1996653133964514]
+Tree 0:
+ (/ TEB EB)
+Tree 1:
+ (Min MINMWT MSS)
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2260610056460037]
+Tree 0:
+ (+ (- BPT SEPT) (+ BPTS MINWIQ))
+Tree 1:
+ (* MSS (Min MAXMWT MSS))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.191496300082389]
+Tree 0:
+ (+ (- BPT SEPT) (/ SSPT (Max (* SEPT (+ (- MAXNIQ AMWT) (- SSPTS ANIQ))) (Min ES TIS))))
+Tree 1:
+ (* MSS (Min MAXMWT MSS))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.165111260308933]
+Tree 0:
+ (Min (* MBT (+ (Min (/ (+ (Max AWIQ BPTS) (Max AWIQ MAXMWT)) (Max MWT MSS)) (Max (Max (/ SEPTS MINNIQ) (Min AMWT SEPTS)) (* (/ SSPTS TES) (- ES TEB)))) (- (* MAXMBT (+ (- BPT SEPT) (+ ES MINNIQ))) (Max (* (Max TIS ES) (* WIQ OWTS)) (Min (- MINNIQ ES) (Min SEPT NIQ)))))) (* (* MAXMBT (+ (- BPT SEPT) (+ ES MINNIQ))) (+ ES MSS)))
+Tree 1:
+ (Min (* MSS (Min MAXMWT MSS)) MSS)
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1774590541189234]
+Tree 0:
+ (+ (- BPT SEPT) (+ BPTS MINWIQ))
+Tree 1:
+ (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2158377308587114]
+Tree 0:
+ (* (/ (/ ANIQ BPTS) (+ (Max NIQ AMBT) (/ SEPT BPT))) (+ (Max NIQ AMBT) (- (- MBT BPTS) MINMWT)))
+Tree 1:
+ (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1946960121406254]
+Tree 0:
+ (- (* MINMBT DD) (- NIQ NIQ))
+Tree 1:
+ (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.207253944029863]
+Tree 0:
+ (+ (- BPT SEPT) (/ SSPT (+ (- BPT SEPT) (+ BPTS MINWIQ))))
+Tree 1:
+ (* MSS (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2255254801040514]
+Tree 0:
+ (- WIQ AMBT)
+Tree 1:
+ (* MSS (* MSS (Min (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min MAXMWT MSS)) MSS)))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.190112656091764]
+Tree 0:
+ (- (- (Min (* MAXNIQ TEB) AMBT) (/ ANIQ BPTS)) (/ BPTS EB))
+Tree 1:
+ (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.218848885269949]
+Tree 0:
+ MWT
+Tree 1:
+ (* MSS (* MSS (Min (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min MAXMWT MSS)) MSS)))
+
+Generation: 20
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.203895572507771]
+Tree 0:
+ NIQ
+Tree 1:
+ (* (* MSS (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))) (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 21
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.157155838348767]
+Tree 0:
+ (/ (- BPT SEPT) (Min WIQ (+ BPTS MINWIQ)))
+Tree 1:
+ (* MSS (* (Min (* MSS MAXMWT) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 22
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1948240443409666]
+Tree 0:
+ (Max (* (Max TIS ES) (+ MINWIQ (- (+ MINNIQ EB) (Max MWT AMWT)))) (Min (- MINNIQ ES) (Min SEPT NIQ)))
+Tree 1:
+ (* MSS (Min (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS) MSS))
+
+Generation: 23
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1829950256313575]
+Tree 0:
+ (+ EB MAXNIQ)
+Tree 1:
+ (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) (* MSS (Min MAXMWT MSS))) MSS))
+
+Generation: 24
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2231428754397773]
+Tree 0:
+ (Min (Min (+ (+ EB SSPTS) (Min TEB MAXWIQ)) (* (/ MSS MAXMWT) (/ MAXNIQ OWTS))) (/ BPT TIS))
+Tree 1:
+ (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 25
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1978067726205537]
+Tree 0:
+ (+ BPTS MINWIQ)
+Tree 1:
+ (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 26
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2513770460789058]
+Tree 0:
+ (* MBT (+ (Min (- (/ (- BPTS MINMWT) (+ ANIQ OWTS)) (- (Max MS EB) (- MAXMWT TES))) MS) AMBT))
+Tree 1:
+ (* (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 27
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.23445784001552]
+Tree 0:
+ (+ (- OWTS EB) (Max TIS ES))
+Tree 1:
+ (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 28
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.148678772657776]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (Min (+ (- BPT SEPT) (/ ANIQ BPTS)) (* MAXNIQ (* MBT MINMWT))))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS)))
+
+Generation: 29
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2009091934139247]
+Tree 0:
+ (Max (Max (* (Max TIS ES) (* MBT (+ (- BPT SEPT) AMBT))) (Min (Max ES (* MINMWT MBT)) AWIQ)) (+ MINMBT MAXMBT))
+Tree 1:
+ (* MSS (* (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 30
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1437039265695543]
+Tree 0:
+ (Min (/ (Min AWIQ (+ AMBT MINWIQ)) SEPTS) (Max (Max SEPTS SSPT) WIQ))
+Tree 1:
+ (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS)))
+
+Generation: 31
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.147917577494412]
+Tree 0:
+ (- (/ (+ TIS (- MWT SEPT)) (+ BPTS MINWIQ)) (+ (+ (- BPT SEPT) (+ BPTS MINWIQ)) (Max TIS ES)))
+Tree 1:
+ (Min (Min (* MSS (Min MAXMWT MSS)) (/ (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (/ (/ ANIQ MBT) (Min MAXWIQ SEPTS)))) MSS)
+
+Generation: 32
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2176949459246194]
+Tree 0:
+ (Max (/ TEB AWIQ) (+ MINMBT MAXMBT))
+Tree 1:
+ (* MSS (* (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS) (Min (Max (Max (Max BPTS MAXMWT) (Max MINMWT AMBT)) (* (Max TES DD) (- SEPTS AMWT))) MSS)))
+
+Generation: 33
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.180700088864623]
+Tree 0:
+ (/ (Min AWIQ (Min MINNIQ SSPT)) SEPTS)
+Tree 1:
+ (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (Min (Min MSS MSS) MSS) MSS)))
+
+Generation: 34
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2252785495685847]
+Tree 0:
+ (Max (Max (* (Max TIS ES) (* MBT (+ (Max SEPTS EB) AMBT))) (Min (Max ES (* MINMWT MBT)) AWIQ)) (+ MINMBT MAXMBT))
+Tree 1:
+ (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 35
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2435420279700997]
+Tree 0:
+ (Max (Min (* MBT (+ MINMWT AMBT)) (+ AMBT MINWIQ)) (- NIQ NIQ))
+Tree 1:
+ (* MSS (* (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS) (Min (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)) MSS)))
+
+Generation: 36
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.192022253422166]
+Tree 0:
+ (Min MINNIQ (Max (/ (* BPTS (Max MAXMBT SSPT)) (Min (+ MINMWT AMBT) (* MAXNIQ (* MBT MINMWT)))) (* TIS MAXNIQ)))
+Tree 1:
+ (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS)))
+
+Generation: 37
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1885106097624987]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (Min MAXNIQ (* MAXNIQ (* MBT MINMWT))))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))))
+
+Generation: 38
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1933630768696593]
+Tree 0:
+ (Min (* TIS MAXNIQ) (Min (+ (/ TEB AWIQ) MAXMBT) (* MAXNIQ (* MBT MINMWT))))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))))
+
+Generation: 39
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1902929279744248]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (- BPTS (Min (+ MAXMBT SSPT) (* ES AMWT))))
+Tree 1:
+ (* (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))) (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 40
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.219182089604873]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (Min MAXNIQ (+ (- BPT SEPT) (Max (- SEPT (/ BPTS MAXMWT)) (+ (Max MINMWT SSPTS) OWTS)))))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (* MSS (Min MAXMWT MSS))))))
+
+Generation: 41
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2118422181402653]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (+ MINMWT AMBT))
+Tree 1:
+ (* MSS (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS))
+
+Generation: 42
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1350451050071038]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (- BPTS (Min (- (Min (+ MS ES) (/ EB ES)) (* (* MINWIQ AMBT) (Min NIQ SEPTS))) (* ES AMWT))))
+Tree 1:
+ (* (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))) (Min MSS MSS))
+
+Generation: 43
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2266261937365854]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (- BPTS (Min (- (Min (+ MINMWT (/ ANIQ BPTS)) (/ EB ES)) (* (* MINWIQ AMBT) (Min NIQ SEPTS))) (* ES AMWT))))
+Tree 1:
+ (* (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))) (Min (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) MSS))
+
+Generation: 44
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1843761116294567]
+Tree 0:
+ (Min MAXNIQ (Min (* MBT (+ MINMWT AMBT)) TIS))
+Tree 1:
+ (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 45
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.162605215343284]
+Tree 0:
+ (+ MINMBT MAXMBT)
+Tree 1:
+ (* MSS (* (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)) (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 46
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.211851073944398]
+Tree 0:
+ (- BPTS (+ MINMBT MAXMBT))
+Tree 1:
+ (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))))
+
+Generation: 47
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2032995678179828]
+Tree 0:
+ (Max (- (* AMWT (Min (* MBT (+ MINMWT AMBT)) TIS)) (+ MWT MAXMBT)) TEB)
+Tree 1:
+ (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 48
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.198467135456588]
+Tree 0:
+ (Min (+ (Min SSPTS ES) AMBT) (Max (/ SSPT (- SEPT AMWT)) (Min (* MBT (+ MINMWT AMBT)) (Min MAXNIQ TIS))))
+Tree 1:
+ (* (* MSS (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 49
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2138926410223507]
+Tree 0:
+ (Max (+ MSS AWIQ) (Max (- TIS ES) (+ AMBT ES)))
+Tree 1:
+ (* (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS))) (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 50
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1953714949999332]
+Tree 0:
+ (Max (- (* AMWT (Min MAXNIQ TIS)) (Min AMBT OWTS)) TEB)
+Tree 1:
+ (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS))
+
+Generation: 51
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1793230863608986]
+Tree 0:
+ (Min (+ (Max (/ SSPT (Min (/ (/ TES MINNIQ) (- SEPTS SSPTS)) (Max (- BPTS MINWIQ) (Max NIQ SEPTS)))) (Min (* MBT (+ MINMWT AMBT)) (Min MAXNIQ TIS))) AMBT) (Max (- (* AMWT (Min MAXNIQ TIS)) (Min AMBT OWTS)) TEB))
+Tree 1:
+ (* (* MSS (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 52
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.203762437703683]
+Tree 0:
+ (Min (* TIS MAXNIQ) (+ (- BPT SEPT) (Min SSPTS ES)))
+Tree 1:
+ (* MSS (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS)))
+
+Generation: 53
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2067494850513607]
+Tree 0:
+ (Min (+ (- BPT (Min SEPT DD)) MAXMBT) (Max (Max (Min MAXNIQ TIS) MINMWT) (* MBT AWIQ)))
+Tree 1:
+ (* MSS (* (Min (* MSS EB) MSS) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 54
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.154374699548906]
+Tree 0:
+ (Min (* TIS MAXNIQ) (Min (+ (- BPT SEPT) (Min SSPTS ES)) (Max (Max (Min MINMWT MBT) MINMWT) (* MBT AWIQ))))
+Tree 1:
+ (* MSS (* (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (Min (Max (Max (Min EB SEPT) (- AMWT AMWT)) (- (Max EB SSPT) (Min SEPT BPTS))) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 55
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2055441556652857]
+Tree 0:
+ (Min (* TIS MAXNIQ) (Min (+ (Max WIQ SSPT) (Min SSPTS ES)) (Max (Max (Min MINMWT MBT) MINMWT) (* MBT AWIQ))))
+Tree 1:
+ (* (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)) (* (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 56
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1840088258612522]
+Tree 0:
+ (Min (* TIS MAXNIQ) (Min (+ (Max WIQ SSPT) (Min SSPTS ES)) (Max (Max (Min MINMWT MBT) MINMWT) (* MBT AWIQ))))
+Tree 1:
+ (* (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)) (* (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 57
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2330044648642478]
+Tree 0:
+ (Min (* TIS MAXNIQ) (Min (+ (Max WIQ SSPT) (Min SSPTS ES)) (Max (Max (Min MINMWT MBT) MINMWT) (* MBT AWIQ))))
+Tree 1:
+ (* (* MSS (Min (* MSS (* MSS (Min MAXMWT MSS))) MSS)) (* (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 58
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.19107500063065]
+Tree 0:
+ (Min (* TIS MAXNIQ) (Min (+ MAXNIQ (Min SSPTS ES)) (Max (Max (Min MINMWT MBT) MINMWT) (* MBT AWIQ))))
+Tree 1:
+ (* (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS)) (* (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 59
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2312341077291387]
+Tree 0:
+ BPT
+Tree 1:
+ (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))
+
+Generation: 60
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.191728900352118]
+Tree 0:
+ (- OWTS (Min MINMWT MBT))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (Min (* MSS (Min MAXMWT (+ TEB MBT))) MSS) (* MSS (Min MAXMWT MSS)))))
+
+Generation: 61
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2415809123376356]
+Tree 0:
+ (Max (- (* AMWT (Min BPT TIS)) (Max (Max (Max (- BPT SEPT) MINMWT) (* MBT AWIQ)) (Min (* TIS MAXNIQ) (* TIS MAXNIQ)))) TEB)
+Tree 1:
+ (* (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (/ (* (Max SSPTS ES) MSS) (* SEPTS MAXWIQ)) MSS))
+
+Generation: 62
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.199085642965209]
+Tree 0:
+ (Min (Min MINMWT MINWIQ) (Min (Min (Max MINMWT (Max TES TIS)) (+ (Min MINMWT MBT) (/ AWIQ ES))) (Min (+ (/ SSPT TEB) MAXMBT) (Min SSPTS ES))))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 63
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1723607581949373]
+Tree 0:
+ (- (/ (/ MAXWIQ MAXNIQ) (* TIS MAXNIQ)) (Min MINMWT MBT))
+Tree 1:
+ (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS))
+
+Generation: 64
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1934458951516427]
+Tree 0:
+ (Min (Min MINMWT MINWIQ) (Min (Max WIQ SSPT) (+ (/ MS MINMWT) (/ WIQ AMWT))))
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) (Min (/ MS (/ (- MINWIQ ANIQ) (+ MINMBT BPT))) MSS)) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 65
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.207502052638808]
+Tree 0:
+ (+ (Min (- (/ (/ MAXWIQ MAXNIQ) (* TIS MAXNIQ)) (Min MINMWT MBT)) (/ (* (+ (+ (/ ES MWT) AMBT) SSPTS) (- SEPTS (Max WIQ SSPT))) OWTS)) TES)
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (Min MSS MSS) (* MSS (Min MAXMWT MSS)))))
+
+Generation: 66
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.173738450577015]
+Tree 0:
+ (/ SEPTS MINWIQ)
+Tree 1:
+ (* MSS (* (Min (* MSS (Min MAXMWT MSS)) MSS) (Min (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (* MSS (Min MAXMWT MSS)))))
+
+Generation: 67
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.233128810612781]
+Tree 0:
+ (+ (+ (+ AWIQ MINMBT) (Min NIQ SEPTS)) (* (Max MINMBT MWT) MINMWT))
+Tree 1:
+ (* MSS (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (* MSS (Min MAXMWT MSS)) MSS))))
+
+Generation: 68
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2136646838664276]
+Tree 0:
+ AMBT
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (Min AWIQ ES) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 69
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2015359762039504]
+Tree 0:
+ AMBT
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (Min AWIQ ES) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 70
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1552841027441616]
+Tree 0:
+ (* MINMBT WIQ)
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (Min AWIQ ES) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 71
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1375553700648773]
+Tree 0:
+ (Min AWIQ (Min (+ (- BPT SEPT) MAXMBT) (Max WIQ SSPT)))
+Tree 1:
+ (* MSS (* (Min (Max (Max (Min AWIQ ES) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) (* MSS (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS))))
+
+Generation: 72
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1466305743059353]
+Tree 0:
+ (Min (Min MINMWT MBT) BPTS)
+Tree 1:
+ (* MSS (* MSS (* (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS) (Min (/ MSS SEPTS) MSS))))
+
+Generation: 73
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2313113177224047]
+Tree 0:
+ (+ MINMWT (Min TIS (* MBT MINMWT)))
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (Min AWIQ ES) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* MSS (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 74
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1888221623710598]
+Tree 0:
+ (- (Min MINMWT MINWIQ) SSPT)
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 75
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2114434189800667]
+Tree 0:
+ (- (Min MINMWT MINWIQ) SSPT)
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB WIQ)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 76
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1567553198589104]
+Tree 0:
+ (- (Min MINMWT MINWIQ) SSPT)
+Tree 1:
+ (* MSS (* (Min (Min (Max MSS (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 77
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1878221307510684]
+Tree 0:
+ (/ AWIQ AWIQ)
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB WIQ)) (Max EB (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 78
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1562202976732823]
+Tree 0:
+ (/ (Min (Min MINMWT MINWIQ) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ WIQ AMBT)))
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 79
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1717969101952486]
+Tree 0:
+ (- (- MWT SEPTS) SSPT)
+Tree 1:
+ (* MSS (* (Min (Min (Max MSS (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) (/ MSS SEPTS))))
+
+Generation: 80
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.199321066970376]
+Tree 0:
+ (* BPT MAXMBT)
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 81
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.18712922640814]
+Tree 0:
+ (/ (Min MINMWT MINWIQ) (* MINMWT (+ WIQ AMBT)))
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 82
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2512163569732744]
+Tree 0:
+ (- MWT (- BPT (+ (Max (* BPT MAXMBT) ANIQ) EB)))
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 83
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.223603540835645]
+Tree 0:
+ (/ (Min (* ES NIQ) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ WIQ AMBT)))
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS)))
+
+Generation: 84
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1790592110767473]
+Tree 0:
+ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (* MINMWT (+ WIQ AMBT)) (+ WIQ AMBT)))
+Tree 1:
+ (* MSS (* (Min (Min (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) (Max (Max (/ EB WIQ) (/ EB MSS)) (Max (/ EB WIQ) (/ MSS SEPTS)))) MSS)))
+
+Generation: 85
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.220619495344398]
+Tree 0:
+ (+ (Max (* AWIQ SSPT) ANIQ) EB)
+Tree 1:
+ (* MSS (* (Min (Min (Max (/ MSS SEPTS) (Max (- WIQ MWT) (/ MSS SEPTS))) MSS) MSS) (Min (Min (* (Max (- WIQ MWT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 86
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.195561205314941]
+Tree 0:
+ (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ (Max MAXWIQ TES) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ (Max MSS AMBT) (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 87
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2564113097180436]
+Tree 0:
+ (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ (Max MAXWIQ TES) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ (Max MSS AMBT) (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 88
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1770321573257796]
+Tree 0:
+ (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ (Max MAXWIQ TES) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ (Max MSS AMBT) (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 89
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.173816934618034]
+Tree 0:
+ (/ (/ (Min (Min NIQ MINMWT) (Min NIQ MINMWT)) (* (Min BPTS MAXMBT) (+ (Max MAXWIQ TES) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 90
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1708975132230144]
+Tree 0:
+ (/ (/ (Min MINMWT (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ (Max MAXWIQ TES) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ (Max MSS AMBT) (* ES ANIQ)) (Min (/ AMBT MINMWT) SSPTS)) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 91
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.174642152426881]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ SSPT) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (+ (Min MINMWT MINWIQ) AMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 92
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.208873304042935]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ SSPT) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (+ (Min MINMWT MINWIQ) AMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 93
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1482658049876178]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ SSPT) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ (Max MAXWIQ TES) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (* (- (- MWT (Min BPTS MAXMBT)) SSPT) (+ WIQ AMBT)))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 94
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.170473141082054]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ SSPT) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (+ (Min MINMWT MINWIQ) AMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MINMWT) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max (Max MSS AMBT) (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 95
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.2203289431074977]
+Tree 0:
+ (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (Min BPTS MAXMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* TES (+ WIQ AMBT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ (Max MSS MAXWIQ) (* ES ANIQ)) (Min (Min MAXMWT MSS) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 96
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.171953309284189]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ (Min (Min NIQ MINMWT) (Max MAXWIQ TES))) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (+ (Min MINMWT MINWIQ) AMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (Max (Min (/ AMWT MINNIQ) (- SSPT BPT)) (Max (- SEPTS MINMWT) (- SEPTS MAXMWT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MSS) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 97
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.170102937988327]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ (Min (Min NIQ MINMWT) (Max MAXWIQ TES))) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (+ (Min MINMWT MINWIQ) AMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (Max (Min (/ AMWT MINNIQ) (- SSPT BPT)) (Max (- SEPTS MINMWT) (- SEPTS MAXMWT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MSS) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Generation: 98
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1793693989892198]
+Tree 0:
+ (/ (/ (Max (Max (Max MINNIQ (Min (Min NIQ MINMWT) (Max MAXWIQ TES))) (Max OWTS ANIQ)) (+ MINWIQ (* MWT MINMBT))) (/ (/ (Min (Min NIQ MINMWT) (Max MAXWIQ TES)) (* (+ (Min MINMWT MINWIQ) AMBT) (+ (Min MINMWT MINWIQ) AMBT))) (* (Min BPTS MAXMBT) (* (Min BPTS MAXMBT) (+ WIQ AMBT))))) (Max (Min (/ AMWT MINNIQ) (- SSPT BPT)) (Max (- SEPTS MINMWT) (- SEPTS MAXMWT))))
+Tree 1:
+ (* MSS (* (Min (Min (- (+ MSS (* ES ANIQ)) (Min (/ AMBT MSS) (/ SSPTS MAXMWT))) MSS) MSS) (Min (Min (* (Max WIQ (/ MSS SEPTS)) (Min MAXMWT MSS)) MSS) MSS)))
+
+Best Individual of Run:
+Subpopulation 0:
+Evaluated: true
+Fitness: [2.1350451050071038]
+Tree 0:
+ (Min (* MBT (+ MINMWT AMBT)) (- BPTS (Min (- (Min (+ MS ES) (/ EB ES)) (* (* MINWIQ AMBT) (Min NIQ SEPTS))) (* ES AMWT))))
+Tree 1:
+ (* (* (Min (* MSS (Min MAXMWT MSS)) MSS) (* MSS (* MSS (Min (* MSS (Min MAXMWT MSS)) MSS)))) (Min MSS MSS))
