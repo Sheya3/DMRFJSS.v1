@@ -104,35 +104,34 @@ public enum JobShopAttribute {
 
 
     //modified by Liu Feige
-    MIN_NUMBER_OF_SHIP("MNOT"), //the minimum number of tugboat that the ship needs
-    MIN_HORSEPOWER_OF_SHIP("MHOT"),//the minimum horsepower of tugboat that the ship needs
-    DISTANCE_STARTINGPOSITION_TO_BERTH("DSTB"),//the distance between berth and starting position of a task
-    DISTANCE_STARTINGPOSITION_TO_END("DSTE"),//the distance between starting position and ending position of a task
-    DISTANCE_STARTINGPOSITION_TO_START("DSTS"), //the distance between starting position and starting position of a task
-    AVE_WORK_IN_QUEUE("AWIQ"),
+    //very raw features of ships and tugs
+//    MIN_NUMBER_OF_SHIP("MNOT"), //the minimum number of tugboat that the ship needs
+//    MIN_HORSEPOWER_OF_SHIP("MHOT"),//the minimum horsepower of tugboat that the ship needs
+//    DISTANCE_STARTINGPOSITION_TO_BERTH("DSTB"),//the distance between berth and starting position of a task
+//    DISTANCE_STARTINGPOSITION_TO_END("DSTE"),//the distance between starting position and ending position of a task
+//    DISTANCE_STARTINGPOSITION_TO_START("DSTS"), //the distance between starting position and starting position of a task
     MAX_SPEED("MS"), // the max speed of the machine tugboat
-    HORSE_POWER("HP"), //the horsepower of tugboat
-    LACK_Of_HORSEPOWER("LOH"), // the lack of horsepower for ship
+//    HORSE_POWER("HP"), //the horsepower of tugboat
+//    LACK_Of_HORSEPOWER("LOH"), // the lack of horsepower for ship
     ENERGY_TUG("EB"),
     ENERGY_IDE("ES"),
 
-    PERCENTAGE_OF_TUG_TO_SHIP("PTTS"),
-    PT_STARTINGPOSITION_TO_END("PTSTE"),
-    PT_STARTINGPOSITION_TO_START("PTSTS"),
+//    PERCENTAGE_OF_TUG_TO_SHIP("PTTS"),
+//    PT_STARTINGPOSITION_TO_END("PTSTE"),
+//    PT_STARTINGPOSITION_TO_START("PTSTS"),
 
-    SPEED("SP"),
-    AVE_ENERGY_TUG("AET"),
-    AVE_ENERGY_IDE("AEI"),
-    AVE_STARTINGPOSITION_TO_START("ADSTS"),
-    AVE_STARTINGPOSITION_TO_END("ADSTE"),
+//    SPEED("SP"),
+//    AVE_STARTINGPOSITION_TO_START("ADSTS"), //average distance
+//    AVE_STARTINGPOSITION_TO_END("ADSTE"),
+
     BERTH_PROC_TIME("BPT"),
     SAILING_PROC_TIME_SS("SSPT"),
     SAILING_PROC_TIME_SE("SEPT"),
     MACHINE_BUSYTIME("MBT"),
-    OPERATION_RT_INS1("ORTS1"),
+//    OPERATION_RT_INS1("ORTS1"),
     OPERATION_PT_INS2_OFWCS("BPTS"),
     OPERATION_PT_INS3_OFWCS("SEPTS"),
-    OPERATION_NIQ_OFWCS("NIQOMS"),
+//    OPERATION_NIQ_OFWCS("NIQOMS"),
     OPERATION_PT_INS1_OFWCS("SSPTS"),
     OP_WAITING_TIME_WS("OWTS"),
     TOTAL_ENERGY_TUG("TEB"),
@@ -182,31 +181,204 @@ public enum JobShopAttribute {
     ) {
         double value = -1;
         switch (this) {
-            case MIN_NUMBER_OF_SHIP:
-                value = op.getNumNeedTug();
-                break;
-            case MIN_HORSEPOWER_OF_SHIP:
-                value = op.getUpperHorsepower();
-                break;
-            case AVE_WORK_IN_QUEUE:
+                // operation
+//            case MIN_NUMBER_OF_SHIP: // the number of tugs that a ship needs
+//                    value = op.getNumNeedTug();
+//                break;
+//            case MIN_HORSEPOWER_OF_SHIP: // the lower bound of hp for a ship
+//                value = op.getLowerHorsepower();
+//                break;
+//            case DISTANCE_STARTINGPOSITION_TO_BERTH: // the distance from start point to berth
+//                value = op.getJob().getDisStoB();
+//                break;
+
+
+//            case AVE_WORK_IN_QUEUE:  // avgWIQ: need time to process all operations
+//                for (int i = 0; i < workCenterset.size(); i++) {
+//                    value += workCenterset.get(i).getWorkInQueue()/workCenterset.size();
+//                }
+//                break;
+//            case SPEED: //current berthing and unberthing speed
+//                double totalv=0;
+//                for (int i = 0; i < workCenterset.size(); i++) {
+//                    double v= workCenterset.get(i).getHorse_C0_C1_VTi()[3];
+//                    totalv += Math.pow(v,2);
+//                }
+//                value = Math.sqrt(totalv);
+//                break;
+//                //other not use
+//            case PERCENTAGE_OF_TUG_TO_SHIP:
+//                for (int i = 0; i < workCenterset.size(); i++) {
+//                    value += workCenterset.get(i).getHorse_C0_C1_VTi()[0]/(op.getUpperHorsepower()*op.getNumNeedTug());
+//                }
+//                break;
+//                //
+//            case AVE_STARTINGPOSITION_TO_START:
+//                int s31= op.getObjectPortArea()-1;
+//                for (int i = 0; i < workCenterset.size(); i++) {
+//                    int s21 = workCenterset.get(i).getMachinePortArea().get(0)-1;
+//                    value += systemState.getDSTS()[s21][s31]/workCenterset.size();
+//                }
+//                break;
+//            case AVE_STARTINGPOSITION_TO_END:
+//                int s11 = op.getObjectPortArea()-1;
+//                for (int i = 0; i < workCenterset.size(); i++) {
+//                    int e1 = workCenterset.get(i).getMachinePortArea().get(0)-1;
+//                    value += systemState.getDSTE()[s11][e1]/workCenterset.size();
+//                }
+//                break;
+//
+//            case LACK_Of_HORSEPOWER:
+//                value = op.getJob().getUpperHorsepower();
+//                for (int i = 0; i < op.getWorkCenterSet().size(); i++) {
+//                    value-=op.getWorkCenterSet().get(i).getMachineHorsepower().get(0);
+//                }
+//                break;
+
+            case PROC_TIME:
+                //value for tugboat, LIUFEIGE
+               value=0;
                 for (int i = 0; i < workCenterset.size(); i++) {
-                    value += workCenterset.get(i).getWorkInQueue()/workCenterset.size();
+                    double v= workCenterset.get(i).getHorse_C0_C1_VTi()[3];
+                    value += Math.pow(v,2);
                 }
+                double totalv = Math.sqrt(value);
+                double s2 = 2*op.getJob().getDisStoB()/totalv;
+                value = s2;
                 break;
-            case DISTANCE_STARTINGPOSITION_TO_BERTH:
-                int s = op.getObjectPortArea()-1;
-                int b = (int) op.getJob().getBerthArea()-1;
-                value = op.getJob().getDisStoB();
+            case NEXT_PROC_TIME:
+                value = systemState.getClockTime();
                 break;
-            case PERCENTAGE_OF_TUG_TO_SHIP:
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    value += workCenterset.get(i).getHorse_C0_C1_VTi()[0]/(op.getUpperHorsepower()*op.getNumNeedTug());
+            case OP_WAITING_TIME:
+                value = systemState.getClockTime() - op.getReadyTime();
+//                value = systemState.getClockTime() - op.getJob().getReleaseTime();
+                break;
+            case WORK_REMAINING:
+                value = op.getWorkRemaining();
+                break;
+            case NUM_OPS_REMAINING:
+                value = op.getNumOpsRemaining();
+                break;
+
+            case DUE_DATE:
+                value = op.getJob().getDueDate();
+                break;
+                
+
+//            case OPERATION_RT_INS1:
+//                //max release time in stage 1
+//                // need to be calculated in both seq and rout
+//                double maxrt=0;
+//                for (int i = 0; i < op.getWorkCenterSet().size(); i++) {
+//                    double pts1 = systemState.getDSTS()[op.getWorkCenterSet().get(i).getMachinePortArea().get(0)-1] //s1
+//                            [op.getObjectPortArea()-1]/13;
+//                    double et1 = pts1 +op.getWorkCenterSet().get(i).getMachineReadyTime(0);
+//                    if(maxrt<et1)
+//                        maxrt=et1;
+//                }
+//                value=maxrt;
+//                break;
+//            case OPERATION_NIQ_OFWCS:
+//                double totalNIQ_In_MachineSet = 0; //state
+//                for (int i = 0; i < workCenterset.size(); i++) {
+//                    totalNIQ_In_MachineSet+=workCenterset.get(i).getWorkInQueue();
+//                }
+//                value = totalNIQ_In_MachineSet;
+//                break;
+
+                /*operation related features*/
+            //operation 1: NPT , not considered for the tugboat simulation, a ship/job just have an operation
+            //operation 2: OWT
+            case OP_WAITING_TIME_WS:
+                double maxtstIns2=0;
+                for (int i = 0; i <= workCenterset.size(); i++) {
+                    if(i<workCenterset.size()){
+                        double finishingT1 = workCenterset.get(i).getMachineReadyTime(0)+ systemState.getDSTS()[op.getWorkCenterSet().get(i).getMachinePortArea().get(0)-1]
+                                [op.getObjectPortArea()-1]/13;
+                        if(maxtstIns2<finishingT1) maxtstIns2 = finishingT1;
+                    }else {
+                        if (wk!=null) {
+                            double finishingT1 = wk.getMachineReadyTime(0) + systemState.getDSTS()[wk.getMachinePortArea().get(0) - 1]
+                                    [op.getObjectPortArea() - 1] / 13;
+                            if (maxtstIns2 < finishingT1) maxtstIns2 = finishingT1;
+                        }
+                    }
                 }
+                value = maxtstIns2-op.getReadyTime();
                 break;
+            // oepration 3: WKR
+            // oepration 4: NOR
+            // operation 5: w
+            case WEIGHT:
+                value = op.getJob().getWeight();
+                break;
+            // operation 6: TIS: current time
+            case TIME_IN_SYSTEM:
+                value = systemState.getClockTime() - op.getJob().getReleaseTime();
+                break;
+
+
+                /*single machine feature*/
+            // machine 1: NIQ
+            case NUM_OPS_IN_QUEUE:
+                if (wk.getQueue()!=null) //LIUFEGE
+                    value = wk.getQueue ().size();   //wk
+                else value=0;
+                break;
+            // machine 2: WIQ
+            case WORK_IN_QUEUE:
+                value = wk.getWorkInQueue();   //wk
+                break;
+            // machine 3: MWT
+            case MACHINE_WAITING_TIME:
+                value = systemState.getClockTime() - wk.getReadyTime();  //wk
+//                value = wk.getReadyTime();  //wk
+                break;
+            // machine 4: PT
+            case BERTH_PROC_TIME:
+                value = op.getJob().getDisStoB()/wk.getHorse_C0_C1_VTi()[3];
+                break;
+            case SAILING_PROC_TIME_SS:
+                int s22 = wk.getMachinePortArea().get(0)-1;
+                int s33= op.getObjectPortArea()-1;
+                value = systemState.getDSTS()[s22][s33]/13;
+                break;
+            case SAILING_PROC_TIME_SE:
+                int s1 = op.getObjectPortArea()-1;
+                int e = wk.getMachinePortArea().get(0)-1;
+                value = systemState.getDSTE()[s1][e]/13;
+                break;
+                //
+            case MAX_SPEED:
+                value = wk.getMachineSpeed().get(0);
+                break;
+            case MACHINE_BUSYTIME:
+                value = wk.getBusyTime();
+                break;
+            //energy for a machine
+            case ENERGY_IDE:
+//                value = wk.getHorse_C0_C1_VTi()[1];
+                //energy Consumption of the tugboat for this task
+                double timeInstage1andstage2=systemState.getDSTS()[wk.getMachinePortArea().get(0)-1]
+                        [op.getObjectPortArea()-1]/13+systemState.getDSTE()
+                        [op.getObjectPortArea()-1][wk.getMachinePortArea().get(0)-1]/13;
+                value = timeInstage1andstage2*wk.getHorse_C0_C1_VTi()[1];
+                break;
+            case ENERGY_TUG:
+//                value = wk.getHorse_C0_C1_VTi()[2];
+                double v0= wk.getHorse_C0_C1_VTi()[3];
+                value = 2*op.getJob().getDisStoB()/v0*wk.getHorse_C0_C1_VTi()[2];
+                break;
+
+            /*mahcine subset related features: FS*/
+            // for the incremental selection: the feature reflect the state of the selected subset + the candidate tug A (assume the tug A
+            // be selected into the subset)
+            // for the group selection, there no wk, therefore, these feature related the group state
+            //machines 1: NIQ, the number of operation in queue
             case AVG_NUM_OPS_IN_QUEUE:
                 value=0;
                 for (int i = 0; i < workCenterset.size(); i++) {
-                   WorkCenter workCenter = workCenterset.get(i);
+                    WorkCenter workCenter = workCenterset.get(i);
                     if (workCenter.getQueue()!=null) //LIUFEGE
                         value += workCenter.getQueue().size();
                     else value+=0;
@@ -216,7 +388,8 @@ public enum JobShopAttribute {
                     value /= (workCenterset.size()+1);
                 }else value /= (workCenterset.size());
                 break;
-            case MAX_NUM_OPS_IN_QUEUE:
+            //machine subset related
+            case MAX_NUM_OPS_IN_QUEUE: //maxNIQ: the number of operation in queue
                 value = 0;
                 if(wk!=null) value=wk.getQueue().size();
                 for (int i = 0; i < workCenterset.size(); i++) {
@@ -238,45 +411,39 @@ public enum JobShopAttribute {
                     }
                 }
                 break;
-            case SPEED:
-                double totalv=0;
+            //machines 2: this is assumed processing, because the real sailing time is max in all tugs, and
+            case AVG_WIQ:
+                double avge=0;
                 for (int i = 0; i < workCenterset.size(); i++) {
-                    double v= workCenterset.get(i).getHorse_C0_C1_VTi()[3];
-                    totalv += Math.pow(v,2);
+                    avge+= workCenterset.get(i).getWorkInQueue();
                 }
-                value = Math.sqrt(totalv);
+                if (wk!=null) {
+                    avge+= wk.getWorkInQueue();
+                    value = avge/(workCenterset.size()+1);
+                }else
+                    value = avge/workCenterset.size();
                 break;
-            case AVE_ENERGY_TUG:
+            case MAX_WIQ:
+                double maxwiq=0;
+                if (wk!=null) maxwiq=wk.getWorkInQueue();
                 for (int i = 0; i < workCenterset.size(); i++) {
-                    value += workCenterset.get(i).getHorse_C0_C1_VTi()[1]/workCenterset.size()/workCenterset.size();
+                    if(maxwiq<workCenterset.get(i).getWorkInQueue()){
+                        maxwiq=workCenterset.get(i).getWorkInQueue();
+                    }
                 }
+                value =maxwiq;
                 break;
-            case AVE_ENERGY_IDE:
+            case MIN_WIQ:
+                double minwiq=999999999;
+                if (wk!=null) minwiq=wk.getWorkInQueue();
                 for (int i = 0; i < workCenterset.size(); i++) {
-                    value += workCenterset.get(i).getHorse_C0_C1_VTi()[2]/workCenterset.size()/workCenterset.size();
+                    if(minwiq>workCenterset.get(i).getWorkInQueue()){
+                        minwiq=workCenterset.get(i).getWorkInQueue();
+                    }
                 }
+                value =minwiq;
                 break;
-            case AVE_STARTINGPOSITION_TO_START:
-                int s31= op.getObjectPortArea()-1;
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    int s21 = workCenterset.get(i).getMachinePortArea().get(0)-1;
-                    value += systemState.getDSTS()[s21][s31]/workCenterset.size();
-                }
-                break;
-            case AVE_STARTINGPOSITION_TO_END:
-                int s11 = op.getObjectPortArea()-1;
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    int e1 = workCenterset.get(i).getMachinePortArea().get(0)-1;
-                    value += systemState.getDSTE()[s11][e1]/workCenterset.size();
-                }
-                break;
-
-            case LACK_Of_HORSEPOWER:
-                value = op.getJob().getUpperHorsepower();
-                for (int i = 0; i < op.getWorkCenterSet().size(); i++) {
-                    value-=op.getWorkCenterSet().get(i).getMachineHorsepower().get(0);
-                }
-                break;
+           //machines 3: MWT  machine waiting time
             case AVG_MWT:
                 for (int i = 0; i < workCenterset.size(); i++) {
                     value += (systemState.getClockTime() - workCenterset.get(i).getReadyTime());
@@ -307,77 +474,96 @@ public enum JobShopAttribute {
                 }
                 value = minmwt;
                 break;
-            case PROC_TIME:
-                //value for tugboat, LIUFEIGE
-               value=0;
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    double v= workCenterset.get(i).getHorse_C0_C1_VTi()[3];
-                    value += Math.pow(v,2);
+            //machines 4: pt of the machine subset with an assumed machine as the candidate
+            case OPERATION_PT_INS1_OFWCS:
+                double minst1=999999999;
+                double maxet1=0;
+                for (int i = 0; i <= workCenterset.size(); i++) {
+                    if(i<workCenterset.size()){
+                        if(minst1>workCenterset.get(i).getMachineReadyTime(0)) minst1 = workCenterset.get(i).getMachineReadyTime(0);
+                        double finishingT1 = workCenterset.get(i).getMachineReadyTime(0)+ systemState.getDSTS()[op.getWorkCenterSet().get(i).getMachinePortArea().get(0)-1]
+                                [op.getObjectPortArea()-1]/13;
+                        if(maxet1<finishingT1) maxet1 = finishingT1;
+                    }else {
+                        if (wk!=null) {
+                            if (minst1 > wk.getMachineReadyTime(0)) minst1 = wk.getMachineReadyTime(0);
+                            double finishingT1 = wk.getMachineReadyTime(0) + systemState.getDSTS()[wk.getMachinePortArea().get(0) - 1]
+                                    [op.getObjectPortArea() - 1] / 13;
+                            if (maxet1 < finishingT1) maxet1 = finishingT1;
+                        }
+                    }
                 }
-                totalv = Math.sqrt(value);
-                double s2 = 2*op.getJob().getDisStoB()/totalv;
-                value = s2;
+                value = maxet1-minst1;
                 break;
-            case NEXT_PROC_TIME:
-                value = systemState.getClockTime();
+            case OPERATION_PT_INS2_OFWCS:
+                double totalv1=0;
+                for (int i = 0; i <= workCenterset.size(); i++) {
+                    if(i<workCenterset.size()){
+                        double v= workCenterset.get(i).getHorse_C0_C1_VTi()[3];
+                        totalv1 += Math.pow(v,2);
+                    }else {
+                        if (wk!=null) {
+                            double v = wk.getHorse_C0_C1_VTi()[3];
+                            totalv1 += Math.pow(v, 2);
+                        }
+                    }
+                }
+                totalv1 = Math.sqrt(totalv1);
+                value = 2*op.getJob().getDisStoB()/totalv1;
                 break;
-            case OP_WAITING_TIME:
-                value = systemState.getClockTime() - op.getReadyTime();
-//                value = systemState.getClockTime() - op.getJob().getReleaseTime();
+            case OPERATION_PT_INS3_OFWCS: //an average value , unlike in stage1, tugboats not need to waite others
+                double avgPTS3=0;
+                for (int i = 0; i <= workCenterset.size(); i++) {
+                    if(i<workCenterset.size()) {
+                        double machineTime = systemState.getDSTE()
+                                [op.getObjectPortArea() - 1]
+                                [workCenterset.get(i).getMachinePortArea().get(0) - 1] / 13;
+                        avgPTS3 += machineTime;
+                    }else {
+                        if (wk!=null) {
+                            double machineTime = systemState.getDSTE()
+                                    [op.getObjectPortArea() - 1]
+                                    [wk.getMachinePortArea().get(0) - 1] / 13;
+                            avgPTS3 += machineTime;
+                        }
+                    }
+                }
+                if (wk!=null) avgPTS3/=(workCenterset.size()+1);
+                else avgPTS3/=(workCenterset.size());
+                value = avgPTS3;
                 break;
-            case WORK_REMAINING:
-                value = op.getWorkRemaining();
+            // machine busy time, the previous task whole processing time
+            case AVG_MBT:
+                double avgmbt = 0;
+                if(wk!=null) avgmbt = wk.getBusyTime();
+                for (int i = 0; i < workCenterset.size(); i++) {
+                    avgmbt += workCenterset.get(i).getBusyTime();
+
+                }
+                if(wk!=null) value=avgmbt/(workCenterset.size()+1);
+                else  value=avgmbt/(workCenterset.size());
                 break;
-            case NUM_OPS_REMAINING:
-                value = op.getNumOpsRemaining();
+            case MIN_MBT:
+                double minmbt = 999999999;
+                if(wk!=null) minmbt = wk.getBusyTime();
+                for (int i = 0; i < workCenterset.size(); i++) {
+                    double mbt0 = workCenterset.get(i).getBusyTime();
+                    if(mbt0<minmbt)
+                        minmbt=mbt0;
+                }
+                value=minmbt;
                 break;
-            case TIME_IN_SYSTEM:
-                value = systemState.getClockTime() - op.getJob().getReleaseTime();
+            case MAX_MBT:
+                double maxmbt = 0;
+                if(wk!=null) maxmbt = wk.getBusyTime();
+                for (int i = 0; i < workCenterset.size(); i++) {
+                    double mbt0 = workCenterset.get(i).getBusyTime();
+                    if(mbt0>maxmbt)
+                        maxmbt=mbt0;
+                }
+                value=maxmbt;
                 break;
-            case WEIGHT:
-                value = op.getJob().getWeight();
-                break;
-            case BERTH_PROC_TIME:
-                value = op.getJob().getDisStoB()/wk.getHorse_C0_C1_VTi()[3];
-                break;
-            case SAILING_PROC_TIME_SS:
-                int s22 = wk.getMachinePortArea().get(0)-1;
-                int s33= op.getObjectPortArea()-1;
-                value = systemState.getDSTS()[s22][s33]/13;
-                break;
-            case SAILING_PROC_TIME_SE:
-                int s1 = op.getObjectPortArea()-1;
-                int e = wk.getMachinePortArea().get(0)-1;
-                value = systemState.getDSTE()[s1][e]/13;
-                break;
-            case NUM_OPS_IN_QUEUE:
-                if (wk.getQueue()!=null) //LIUFEGE
-                    value = wk.getQueue ().size();   //wk
-                else value=0;
-                break;
-            case WORK_IN_QUEUE:
-                value = wk.getWorkInQueue();   //wk
-                break;
-            case MACHINE_WAITING_TIME:
-                value = systemState.getClockTime() - wk.getReadyTime();  //wk
-//                value = wk.getReadyTime();  //wk
-                break;
-            case DUE_DATE:
-                value = op.getJob().getDueDate();
-                break;
-            case ENERGY_IDE:
-//                value = wk.getHorse_C0_C1_VTi()[1];
-                //energy Consumption of the tugboat for this task
-                double timeInstage1andstage2=systemState.getDSTS()[wk.getMachinePortArea().get(0)-1]
-                        [op.getObjectPortArea()-1]/13+systemState.getDSTE()
-                        [op.getObjectPortArea()-1][wk.getMachinePortArea().get(0)-1]/13;
-                value = timeInstage1andstage2*wk.getHorse_C0_C1_VTi()[1];
-                break;
-            case ENERGY_TUG:
-//                value = wk.getHorse_C0_C1_VTi()[2];
-                double v0= wk.getHorse_C0_C1_VTi()[3];
-                value = 2*op.getJob().getDisStoB()/v0*wk.getHorse_C0_C1_VTi()[2];
-                break;
+            //real speed of the berth assistance process of current estimated tug subset
             case SPEED_OF_MS:
                 double vofset = 0;
                 for (int i = 0; i <= workCenterset.size(); i++) {
@@ -393,6 +579,7 @@ public enum JobShopAttribute {
                 }
                 value = Math.sqrt(vofset);
                 break;
+                //energy for machine subset
             case TOTAL_ENERGY_TUG:
                 double totalv111=0;
                 for (int i = 0; i <= workCenterset.size(); i++) {
@@ -431,167 +618,6 @@ public enum JobShopAttribute {
                     value += timeInstage1andstage22*wk.getHorse_C0_C1_VTi()[1];
                 }
                 break;
-            case MAX_SPEED:
-                value = wk.getMachineSpeed().get(0);
-                break;
-            case MACHINE_BUSYTIME:
-                value = wk.getBusyTime();
-                break;
-            case OPERATION_RT_INS1:
-                //max release time in stage 1
-                // need to be calculated in both seq and rout
-                double maxrt=0;
-                for (int i = 0; i < op.getWorkCenterSet().size(); i++) {
-                    double pts1 = systemState.getDSTS()[op.getWorkCenterSet().get(i).getMachinePortArea().get(0)-1] //s1
-                            [op.getObjectPortArea()-1]/13;
-                    double et1 = pts1 +op.getWorkCenterSet().get(i).getMachineReadyTime(0);
-                    if(maxrt<et1)
-                        maxrt=et1;
-                }
-                value=maxrt;
-                break;
-            case OPERATION_PT_INS1_OFWCS:
-                double minst1=999999999;
-                double maxet1=0;
-                for (int i = 0; i <= workCenterset.size(); i++) {
-                    if(i<workCenterset.size()){
-                       if(minst1>workCenterset.get(i).getMachineReadyTime(0)) minst1 = workCenterset.get(i).getMachineReadyTime(0);
-                       double finishingT1 = workCenterset.get(i).getMachineReadyTime(0)+ systemState.getDSTS()[op.getWorkCenterSet().get(i).getMachinePortArea().get(0)-1]
-                               [op.getObjectPortArea()-1]/13;
-                       if(maxet1<finishingT1) maxet1 = finishingT1;
-                    }else {
-                        if (wk!=null) {
-                            if (minst1 > wk.getMachineReadyTime(0)) minst1 = wk.getMachineReadyTime(0);
-                            double finishingT1 = wk.getMachineReadyTime(0) + systemState.getDSTS()[wk.getMachinePortArea().get(0) - 1]
-                                    [op.getObjectPortArea() - 1] / 13;
-                            if (maxet1 < finishingT1) maxet1 = finishingT1;
-                        }
-                    }
-                }
-                value = maxet1-minst1;
-                break;
-            case OPERATION_PT_INS2_OFWCS:
-                double totalv1=0;
-                for (int i = 0; i <= workCenterset.size(); i++) {
-                   if(i<workCenterset.size()){
-                       double v= workCenterset.get(i).getHorse_C0_C1_VTi()[3];
-                       totalv1 += Math.pow(v,2);
-                   }else {
-                       if (wk!=null) {
-                           double v = wk.getHorse_C0_C1_VTi()[3];
-                           totalv1 += Math.pow(v, 2);
-                       }
-                   }
-                }
-                totalv1 = Math.sqrt(totalv1);
-                value = 2*op.getJob().getDisStoB()/totalv1;
-                break;
-            case OPERATION_PT_INS3_OFWCS: //an average value , unlike in stage1, tugboats not need to waite others
-                double avgPTS3=0;
-                for (int i = 0; i <= workCenterset.size(); i++) {
-                    if(i<workCenterset.size()) {
-                        double machineTime = systemState.getDSTE()
-                                [op.getObjectPortArea() - 1]
-                                [workCenterset.get(i).getMachinePortArea().get(0) - 1] / 13;
-                        avgPTS3 += machineTime;
-                    }else {
-                        if (wk!=null) {
-                            double machineTime = systemState.getDSTE()
-                                    [op.getObjectPortArea() - 1]
-                                    [wk.getMachinePortArea().get(0) - 1] / 13;
-                            avgPTS3 += machineTime;
-                        }
-                    }
-                }
-                if (wk!=null) avgPTS3/=(workCenterset.size()+1);
-                else avgPTS3/=(workCenterset.size());
-                value = avgPTS3;
-                break;
-            case OP_WAITING_TIME_WS:
-                double maxtstIns2=0;
-                for (int i = 0; i <= workCenterset.size(); i++) {
-                    if(i<workCenterset.size()){
-                        double finishingT1 = workCenterset.get(i).getMachineReadyTime(0)+ systemState.getDSTS()[op.getWorkCenterSet().get(i).getMachinePortArea().get(0)-1]
-                                [op.getObjectPortArea()-1]/13;
-                        if(maxtstIns2<finishingT1) maxtstIns2 = finishingT1;
-                    }else {
-                        if (wk!=null) {
-                            double finishingT1 = wk.getMachineReadyTime(0) + systemState.getDSTS()[wk.getMachinePortArea().get(0) - 1]
-                                    [op.getObjectPortArea() - 1] / 13;
-                            if (maxtstIns2 < finishingT1) maxtstIns2 = finishingT1;
-                        }
-                    }
-                }
-                value = maxtstIns2-op.getReadyTime();
-                break;
-            case AVG_WIQ:
-                double avge=0;
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    avge+= workCenterset.get(i).getWorkInQueue();
-                }
-                if (wk!=null) {
-                    avge+= wk.getWorkInQueue();
-                    value = avge/(workCenterset.size()+1);
-                }else
-                    value = avge/workCenterset.size();
-                break;
-            case MAX_WIQ:
-                double maxwiq=0;
-                if (wk!=null) maxwiq=wk.getWorkInQueue();
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    if(maxwiq<workCenterset.get(i).getWorkInQueue()){
-                        maxwiq=workCenterset.get(i).getWorkInQueue();
-                    }
-                }
-                value =maxwiq;
-                break;
-            case MIN_WIQ:
-                double minwiq=999999999;
-                if (wk!=null) minwiq=wk.getWorkInQueue();
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    if(minwiq>workCenterset.get(i).getWorkInQueue()){
-                        minwiq=workCenterset.get(i).getWorkInQueue();
-                    }
-                }
-                value =minwiq;
-                break;
-            case OPERATION_NIQ_OFWCS:
-                double totalNIQ_In_MachineSet = 0; //state
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    totalNIQ_In_MachineSet+=workCenterset.get(i).getWorkInQueue();
-                }
-                value = totalNIQ_In_MachineSet;
-                break;
-            case MAX_MBT:
-                double maxmbt = 0;
-                if(wk!=null) maxmbt = wk.getBusyTime();
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    double mbt0 = workCenterset.get(i).getBusyTime();
-                    if(mbt0>maxmbt)
-                        maxmbt=mbt0;
-                }
-                value=maxmbt;
-                break;
-            case MIN_MBT:
-                double minmbt = 999999999;
-                if(wk!=null) minmbt = wk.getBusyTime();
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    double mbt0 = workCenterset.get(i).getBusyTime();
-                    if(mbt0<minmbt)
-                        minmbt=mbt0;
-                }
-                value=minmbt;
-                break;
-            case AVG_MBT:
-                double avgmbt = 0;
-                if(wk!=null) avgmbt = wk.getBusyTime();
-                for (int i = 0; i < workCenterset.size(); i++) {
-                    avgmbt += workCenterset.get(i).getBusyTime();
-
-                }
-                if(wk!=null) value=avgmbt/(workCenterset.size()+1);
-                else  value=avgmbt/(workCenterset.size());
-                break;
             default:
                 System.err.println("Undefined attribute " + name);
                 System.exit(1);
@@ -610,47 +636,6 @@ public enum JobShopAttribute {
                 break;
             case ENERGY_IDE:
                 value = workCenter.getHorse_C0_C1_VTi()[2];
-                break;
-            case DISTANCE_STARTINGPOSITION_TO_BERTH:
-                int s = op.getObjectPortArea()-1;
-                int b = (int) op.getJob().getBerthArea()-1;
-                value = op.getJob().getDisStoB();
-                break;
-            case DISTANCE_STARTINGPOSITION_TO_END:
-                int s1 = op.getObjectPortArea()-1;
-                int e = workCenter.getMachinePortArea().get(0)-1;
-                value = systemState.getDSTE()[s1][e];
-                break;
-            case DISTANCE_STARTINGPOSITION_TO_START:
-                int s2 = workCenter.getMachinePortArea().get(0)-1;
-                int s3= op.getObjectPortArea()-1;
-                value = systemState.getDSTS()[s2][s3];
-                break;
-            case PT_STARTINGPOSITION_TO_END:
-                int s11 = op.getObjectPortArea()-1;
-                int e1 = workCenter.getMachinePortArea().get(0)-1;
-                value = systemState.getDSTE()[s11][e1]/13;
-                break;
-            case PT_STARTINGPOSITION_TO_START:
-                int s21 = workCenter.getMachinePortArea().get(0)-1;
-                int s31= op.getObjectPortArea()-1;
-                value = systemState.getDSTS()[s21][s31]/13;
-                break;
-            case MIN_NUMBER_OF_SHIP:
-                value = op.getNumNeedTug();
-                break;
-            case MIN_HORSEPOWER_OF_SHIP:
-                value = op.getUpperHorsepower();
-                break;
-            case MAX_SPEED:
-                value = workCenter.getMachineSpeed().get(0);
-                break;
-            case HORSE_POWER:
-                value = workCenter.getMachineHorsepower().get(0);
-                break;
-
-            case PERCENTAGE_OF_TUG_TO_SHIP:
-                value = workCenter.getHorse_C0_C1_VTi()[0]/(op.getUpperHorsepower()*op.getNumNeedTug());
                 break;
             case PROC_TIME:
                 //value for tugboat , LIUFEIGE
@@ -684,8 +669,6 @@ public enum JobShopAttribute {
             case MACHINE_READY_TIME:
                 value = workCenter.getReadyTime();
                 break;
-
-
             //modified by fzhang 31.5.2018  next processing time
             case NEXT_PROC_TIME:
                 value = op.getNextProcTime();
@@ -704,28 +687,12 @@ public enum JobShopAttribute {
             case OP_READY_TIME:
                 value = systemState.getClockTime();
                 break;
-
-//            case NEXT_READY_TIME:
-//                value = systemState.nextReadyTime(op);
-//                break;
-//            case NEXT_WAITING_TIME:
-//                value = systemState.nextReadyTime(op) - systemState.getClockTime();
-//                break;                                                                                                0
             case WORK_REMAINING:
                 value = op.getWorkRemaining();
                 break;
             case NUM_OPS_REMAINING:
                 value = op.getNumOpsRemaining();
                 break;
-//            case WORK_IN_NEXT_QUEUE:
-//                value = systemState.workInNextQueue(op);
-//                break;
-//            case NUM_OPS_IN_NEXT_QUEUE:
-//                value = systemState.numOpsInNextQueue(op);
-//                break;
-//            case FLOW_DUE_DATE:
-//                value = op.getFlowDueDate();
-//                break;
             case RELATIVE_FLOW_DUE_DATE:
                 value = op.getFlowDueDate() - systemState.getClockTime();
                 break;
@@ -977,7 +944,7 @@ public enum JobShopAttribute {
                 JobShopAttribute.NUM_OPS_IN_QUEUE,
                 JobShopAttribute.WORK_IN_QUEUE,
                 JobShopAttribute.MACHINE_WAITING_TIME,
-                JobShopAttribute.PROC_TIME, //£¿
+                JobShopAttribute.PROC_TIME, //ï¿½ï¿½
                 JobShopAttribute.NEXT_PROC_TIME,
                 JobShopAttribute.OP_WAITING_TIME,
                 JobShopAttribute.WORK_REMAINING,
